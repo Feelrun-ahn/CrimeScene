@@ -6,6 +6,7 @@
 <script src="./support.js"></script>
 </head>
 <body>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 56"><rect width="120" height="56" fill="#08070a"/><text x="60" y="33" font-family="Arial" font-size="20" font-weight="900" fill="#e00b18" text-anchor="middle">CSJ</text></svg></template>
 <x-dc>
 <helmet data-dc-atomics>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -104,7 +105,7 @@ button:active{transform:scale(.94)}
 
 <div data-m="nav" style="position:fixed;top:0;left:0;width:100%;z-index:60;display:flex;align-items:center;justify-content:space-between;padding:14px 28px;background:linear-gradient(180deg,rgba(8,7,10,.96),rgba(8,7,10,.55) 70%,transparent);backdrop-filter:blur(2px)">
   <div style="display:flex;align-items:center;gap:18px">
-    <a href="#top" onClick="{{ goHome }}" title="HOME" style="display:block;line-height:0;cursor:pointer" style-hover="transform:scale(1.04)"><img src="assets/logo.png" alt="CRIME SCENE JAPAN" style="height:46px;width:auto;display:block;filter:drop-shadow(0 0 12px rgba(224,11,24,.35))"></a>
+    <a href="#top" onClick="{{ goHome }}" title="HOME" style="display:block;line-height:0;cursor:pointer" style-hover="transform:scale(1.04)"><img src="logo.png" alt="CRIME SCENE JAPAN" style="height:46px;width:auto;display:block;filter:drop-shadow(0 0 12px rgba(224,11,24,.35))"></a>
     <div style="width:1px;height:26px;background:rgba(255,255,255,.16)"></div>
     <div style="font-family:'Oswald',sans-serif;font-size:12px;letter-spacing:.28em;color:#fff;font-weight:600">{{ t.storeTag }}</div>
   </div>
@@ -128,7 +129,7 @@ button:active{transform:scale(.94)}
 </div>
 
 <section id="top" data-m="hero" style="position:relative;height:820px;overflow:hidden;border-bottom:1px solid rgba(224,11,24,.35)">
-  <img src="assets/hero.png" alt="CRIME SCENE ARCHIVE" data-parallax="0.32" data-parallax-base="scale(1.2)" style="position:absolute;inset:-12% 0;width:100%;height:124%;object-fit:cover;object-position:88% center;transform:scale(1.2);transform-origin:100% 50%;will-change:transform">
+  <img src="hero.jpg" alt="CRIME SCENE ARCHIVE" data-parallax="0.32" data-parallax-base="scale(1.2)" style="position:absolute;inset:-12% 0;width:100%;height:124%;object-fit:cover;object-position:88% center;transform:scale(1.2);transform-origin:100% 50%;will-change:transform">
   <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,7,10,.92) 0%,rgba(8,7,10,.42) 46%,rgba(8,7,10,.18) 72%,rgba(8,7,10,.78) 100%)"></div>
   <div style="position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.22) 0 1px,transparent 1px 3px);opacity:.5;pointer-events:none"></div>
   <div style="position:absolute;left:0;top:0;width:100%;height:40px;background:linear-gradient(180deg,rgba(224,11,24,.16),transparent);animation:csj-scan 9s linear infinite;pointer-events:none"></div>
@@ -222,7 +223,7 @@ button:active{transform:scale(.94)}
 </section>
 
 <section id="premium" style="position:relative;background:#0b0a0d;border-bottom:1px solid rgba(224,11,24,.3);overflow:hidden">
-  <div style="position:absolute;inset:-10% 0;height:120%;opacity:.28;overflow:hidden"><img src="assets/hero.png" alt="" data-parallax="-0.06" data-parallax-base="scale(1.06)" style="width:100%;height:100%;object-fit:cover;object-position:88% center;transform:scale(1.06);will-change:transform"></div>
+  <div style="position:absolute;inset:-10% 0;height:120%;opacity:.28;overflow:hidden"><img src="hero.jpg" alt="" data-parallax="-0.06" data-parallax-base="scale(1.06)" style="width:100%;height:100%;object-fit:cover;object-position:88% center;transform:scale(1.06);will-change:transform"></div>
   <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,7,10,.97),rgba(8,7,10,.72) 60%,rgba(8,7,10,.95))"></div>
   <div data-m="split" style="position:relative;max-width:1360px;margin:0 auto;padding:96px 40px;display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center">
     <div style="display:flex;flex-direction:column;gap:20px">
@@ -243,7 +244,7 @@ button:active{transform:scale(.94)}
       </div>
     </div>
     <div style="position:relative;border:1px solid rgba(255,255,255,.14);background:#0c0b0f">
-      <img src="assets/p-case.png" alt="ARCHIVE BOX" style="width:100%;display:block">
+      <img src="p-case.jpg" alt="ARCHIVE BOX" style="width:100%;display:block">
       <div style="position:absolute;bottom:0;left:0;width:100%;padding:14px 18px;background:rgba(8,7,10,.85);display:flex;justify-content:space-between;font-family:'Roboto Mono',monospace;font-size:11px;color:rgba(255,255,255,.55)">
         <span>SERIAL No. 0001-1000</span><span>{{ t.releaseDate }}</span>
       </div>
@@ -314,7 +315,7 @@ button:active{transform:scale(.94)}
       <p style="margin:0;font-size:15px;line-height:2;color:rgba(239,234,228,.8)">{{ t.bookingBody }}</p>
       <div style="font-family:'Roboto Mono',monospace;font-size:11px;color:rgba(255,255,255,.34);line-height:1.8">{{ t.bookingSub }}</div>
       <div style="margin-top:10px;border:1px solid rgba(255,255,255,.12);background:#0c0b0f;overflow:hidden">
-        <img src="assets/p-diorama.png" alt="CRIME SCENE ROOM" style="width:100%;display:block;opacity:.92;transition:transform .8s cubic-bezier(.2,.8,.2,1)" style-hover="transform:scale(1.04)">
+        <img src="p-diorama.jpg" alt="CRIME SCENE ROOM" style="width:100%;display:block;opacity:.92;transition:transform .8s cubic-bezier(.2,.8,.2,1)" style-hover="transform:scale(1.04)">
       </div>
     </div>
     <div data-m="resv" style="border:1px solid rgba(255,255,255,.14);background:#0c0b0f;padding:34px 36px 38px;display:flex;flex-direction:column;gap:26px;align-self:start">
@@ -367,7 +368,7 @@ button:active{transform:scale(.94)}
 <footer data-m="foot" style="background:#08070a;padding:64px 40px 54px">
   <div style="max-width:1360px;margin:0 auto;display:flex;align-items:flex-start;justify-content:space-between;gap:50px;flex-wrap:wrap">
     <div style="display:flex;flex-direction:column;gap:16px">
-      <a href="#top" onClick="{{ goHome }}" style="display:block;line-height:0" style-hover="transform:scale(1.02)"><img src="assets/logo.png" alt="CRIME SCENE JAPAN" style="height:64px;width:auto"></a>
+      <a href="#top" onClick="{{ goHome }}" style="display:block;line-height:0" style-hover="transform:scale(1.02)"><img src="logo.png" alt="CRIME SCENE JAPAN" style="height:64px;width:auto"></a>
       <div style="font-family:'Roboto Mono',monospace;font-size:11px;color:rgba(255,255,255,.3);line-height:1.9;white-space:pre-line">{{ t.footerNote }}</div>
     </div>
     <div style="display:flex;gap:60px">
@@ -563,39 +564,39 @@ button:active{transform:scale(.94)}
 const YEN = n => '¥' + n.toLocaleString('en-US');
 
 const PRODUCTS = [
-  { id:'case', no:'ITEM 01', cat:'GAME PACKAGE', price:7100, img:'assets/p-case.png', badge:'NEW',
+  { id:'case', no:'ITEM 01', cat:'GAME PACKAGE', price:7100, img:'p-case.jpg', badge:'NEW',
     ja:{ name:'推理ゲームパッケージ CASE 01「霧の館」', desc:'番組 CASE 01 をそのまま自宅で。現場図面、容疑者資料、証拠写真、赤フィルター、投票用サイン付き。4-6名・約120分。', size:'W320 × H220 × D45 mm', material:'紙 / PET / 亜鉛合金バッジ' },
     ko:{ name:'추리게임 패키지 CASE 01 「안개의 관」', desc:'방송 CASE 01을 그대로 집에서. 현장 도면, 용의자 자료, 증거 사진, 레드 필터, 투표용 사인 포함. 4~6인, 약 120분.', size:'W320 × H220 × D45 mm', material:'종이 / PET / 아연합금 배지' } },
-  { id:'diorama', no:'ITEM 02', cat:'COLLECTION', price:19800, img:'assets/p-diorama.png', badge:'LIMITED',
+  { id:'diorama', no:'ITEM 02', cat:'COLLECTION', price:19800, img:'p-diorama.jpg', badge:'LIMITED',
     ja:{ name:'現場ジオラマ「空港ロビー」', desc:'第4話の現場を1/64スケールで再現。アクリルケース、赤糸の動線、シルエットフィギュア5体、LEDベース付き。', size:'W300 × H150 × D190 mm', material:'アクリル / ABS / 木製ベース' },
     ko:{ name:'현장 디오라마 「공항 로비」', desc:'4화 현장을 1/64 스케일로 재현. 아크릴 케이스, 붉은 실 동선, 실루엣 피규어 5종, LED 베이스 포함.', size:'W300 × H150 × D190 mm', material:'아크릴 / ABS / 우드 베이스' } },
-  { id:'jacket', no:'ITEM 03', cat:'APPAREL', price:28000, img:'assets/p-jacket.png', badge:'',
+  { id:'jacket', no:'ITEM 03', cat:'APPAREL', price:28000, img:'p-jacket.jpg', badge:'',
     ja:{ name:'捜査官フィールドジャケット', desc:'出演者着用モデル。撥水リップストップ、青ステッチ、証拠タグ用D環、着脱式イエロートライアングルポーチ。', size:'S / M / L / XL', material:'ナイロン100%(撥水加工)' },
     ko:{ name:'수사관 필드 재킷', desc:'출연자 착용 모델. 발수 립스톱, 블루 스티치, 증거 태그용 D링, 탈착식 옐로 트라이앵글 파우치.', size:'S / M / L / XL', material:'나일론 100% (발수 가공)' } },
-  { id:'tote', no:'ITEM 04', cat:'BAG', price:9300, img:'assets/p-tote.png', badge:'',
+  { id:'tote', no:'ITEM 04', cat:'BAG', price:9300, img:'p-tote.jpg', badge:'',
     ja:{ name:'現場調査トートバッグ', desc:'赤糸と青グリッドを刺繍で再現。A4収納、クリアIDポケット、カラビナ、三角ポーチ・ショルダー付属。', size:'W360 × H400 × D140 mm', material:'コットンキャンバス 12oz' },
     ko:{ name:'현장 조사 토트백', desc:'붉은 실과 블루 그리드를 자수로 재현. A4 수납, 투명 ID 포켓, 카라비너, 삼각 파우치·숄더 스트랩 포함.', size:'W360 × H400 × D140 mm', material:'코튼 캔버스 12oz' } },
-  { id:'note', no:'ITEM 05', cat:'STATIONERY', price:5800, img:'assets/p-note.png', badge:'',
+  { id:'note', no:'ITEM 05', cat:'STATIONERY', price:5800, img:'p-note.jpg', badge:'',
     ja:{ name:'捜査ノートセット', desc:'ハードカバーノート、真鍮シャープペン、真鍮定規、赤フィルター、インデックス4色、写真スリーブ、ネイビーポーチ。', size:'B6 / ポーチ W230 × H180 mm', material:'紙 / 真鍮 / ポリエステル' },
     ko:{ name:'수사 노트 세트', desc:'하드커버 노트, 황동 샤프, 황동 자, 레드 필터, 인덱스 4색, 사진 슬리브, 네이비 파우치.', size:'B6 / 파우치 W230 × H180 mm', material:'종이 / 황동 / 폴리에스터' } },
-  { id:'binder', no:'ITEM 06', cat:'STATIONERY', price:6800, img:'assets/p-binder.png', badge:'',
+  { id:'binder', no:'ITEM 06', cat:'STATIONERY', price:6800, img:'p-binder.jpg', badge:'',
     ja:{ name:'エビデンス・バインダー', desc:'現場写真12枚、赤・青フィルターシート、インデックス5枚、コーナーシール。資料を追加収納できる3リング仕様。', size:'W250 × H210 × D45 mm', material:'PU / PET / 紙' },
     ko:{ name:'에비던스 바인더', desc:'현장 사진 12장, 레드·블루 필터 시트, 인덱스 5장, 코너 스티커. 자료를 계속 추가할 수 있는 3링 사양.', size:'W250 × H210 × D45 mm', material:'PU / PET / 종이' } },
-  { id:'tumbler', no:'ITEM 07', cat:'DAILY', price:4900, img:'assets/p-tumbler.png', badge:'',
+  { id:'tumbler', no:'ITEM 07', cat:'DAILY', price:4900, img:'p-tumbler.jpg', badge:'',
     ja:{ name:'指紋エンボス タンブラー 400ml', desc:'マット塗装のボディに指紋をエンボス。真空二層、ワンタッチ栓、イエロータグチャーム付き。', size:'φ70 × H210 mm / 400ml', material:'ステンレス / シリコーン' },
     ko:{ name:'지문 엠보싱 텀블러 400ml', desc:'매트 도장 보디에 지문을 엠보싱. 진공 이중 구조, 원터치 뚜껑, 옐로 태그 참 포함.', size:'φ70 × H210 mm / 400ml', material:'스테인리스 / 실리콘' } },
-  { id:'phone', no:'ITEM 08', cat:'DAILY', price:5400, img:'assets/p-phone.png', badge:'',
+  { id:'phone', no:'ITEM 08', cat:'DAILY', price:5400, img:'p-phone.jpg', badge:'',
     ja:{ name:'相関図スマホケース＋アクセサリー', desc:'青グリッドに赤い動線。虫眼鏡キーホルダー、クリアポーチ、イエロースタンドの4点セット。', size:'iPhone 15 / 16 / 16 Pro', material:'TPU / アクリル / PVC' },
     ko:{ name:'상관도 폰케이스 + 액세서리', desc:'블루 그리드 위 붉은 동선. 돋보기 키링, 투명 파우치, 옐로 스탠드까지 4점 세트.', size:'iPhone 15 / 16 / 16 Pro', material:'TPU / 아크릴 / PVC' } },
-  { id:'keyring', no:'ITEM 09', cat:'COLLECTION', price:3600, img:'assets/p-keyring.png', badge:'',
+  { id:'keyring', no:'ITEM 09', cat:'COLLECTION', price:3600, img:'p-keyring.jpg', badge:'',
     ja:{ name:'アクリルキーホルダー 5種セット', desc:'指紋カード、虫眼鏡、証拠袋、手荷物タグ、赤糸スプール。ベロア台紙のギフトボックス入り。', size:'H45-60 mm', material:'アクリル / 亜鉛合金' },
     ko:{ name:'아크릴 키링 5종 세트', desc:'지문 카드, 돋보기, 증거 봉투, 수하물 태그, 붉은 실 스풀. 벨벳 대지 기프트 박스 포함.', size:'H45-60 mm', material:'아크릴 / 아연합금' } },
-  { id:'mini', no:'ITEM 10', cat:'COLLECTION', price:1200, img:'assets/p-mini.png', badge:'BLIND',
+  { id:'mini', no:'ITEM 10', cat:'COLLECTION', price:1200, img:'p-mini.jpg', badge:'BLIND',
     ja:{ name:'証拠品ミニチュア ブラインドボックス', desc:'全6種＋シークレット1種。トランク、鍵、赤糸、インスタントカメラ、現場標識、ブラックケース。', size:'H30-45 mm', material:'PVC / ABS' },
     ko:{ name:'증거품 미니어처 블라인드박스', desc:'전 6종 + 시크릿 1종. 트렁크, 열쇠, 붉은 실, 인스탁스, 현장 표식, 블랙 케이스.', size:'H30-45 mm', material:'PVC / ABS' } }
 ];
 
-const PREMIUM = { id:'premium', price:49800, img:'assets/p-case.png',
+const PREMIUM = { id:'premium', price:49800, img:'p-case.jpg',
   ja:{ name:'完全版 ARCHIVE BOX(限定1,000)' }, ko:{ name:'완전판 ARCHIVE BOX (한정 1,000)' } };
 
 const CATS = ['ALL','GAME PACKAGE','COLLECTION','APPAREL','BAG','STATIONERY','DAILY'];

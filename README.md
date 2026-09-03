@@ -1,17 +1,20 @@
 # CRIME SCENE JAPAN — 公式グッズストア (mock)
 
-〈크라임씬〉 한일 공동제작 제안서용 굿즈 스토어 목업. JP/KR 전환, 장바구니·체크아웃, 체험 예약 플로우 동작.
+〈크라임씬〉 한일 공동제작 제안서용 굿즈 스토어 목업.
 
-## GitHub Pages 배포
-1. 이 폴더 내용을 리포지토리 루트에 푸시
-2. Settings → Pages → Source: `main` / `/ (root)`
-3. `index.html` 이 그대로 홈으로 뜹니다
+## 업로드 방법 (중요)
+이 폴더의 **모든 파일을 리포지토리 루트에 그대로** 올리세요. 폴더를 만들지 말고 평평하게 올려야 합니다.
 
-로컬 확인: `python3 -m http.server` 후 http://localhost:8000
+```
+index.html
+support.js
+logo.png
+hero.jpg
+p-case.jpg  p-jacket.jpg  p-binder.jpg  p-tumbler.jpg  p-phone.jpg
+p-mini.jpg  p-note.jpg    p-keyring.jpg p-tote.jpg     p-diorama.jpg
+```
 
-## 구성
-- `index.html` — 페이지 전체(마크업 + 로직)
-- `support.js` — 런타임
-- `assets/` — 히어로·로고·상품 이미지 12종
+이후 Settings → Pages → Source: `main` / `/ (root)`
 
-지도 타일은 OpenStreetMap © OpenStreetMap contributors.
+이미지는 웹용으로 압축했습니다(전체 약 1.8MB).
+지도 타일 © OpenStreetMap contributors.
